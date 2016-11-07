@@ -1,0 +1,168 @@
+// Global styles
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Maven Pro", Helvetica, sans-serif;
+  font-size: 1.375em;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+// logo style
+
+.logo {
+  font-weight: 900;
+  color: #eee;
+  position: relative;
+  padding-left: 3em;
+}
+
+.logo::before {
+  content: ' ';
+  position: absolute;
+  top: -.3em;
+  left: 0px;
+  background-color: rgb(123, 181, 21);
+  width: 40px;
+  height: 40px;
+  border-radius: .5em;
+  transform: rotate(45deg);
+}
+
+.logo::after {
+  content: ' ';
+  position: absolute;
+  top: -.125em;
+  left: .9em;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: .3em;
+  transform: rotate(45deg);
+}
+
+// end logo
+
+// clearfix
+
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+// end clearfix
+
+.green {
+  background-color: rgb(123, 181, 21);
+  color: #fff;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Banner styles */
+
+#banner {
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+header {
+  padding: 2em 0;
+}
+
+header .logo {
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+nav a {
+  padding-right: 4em;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header button {
+  float: right;
+  font-size: 1rem;
+  font-weight: 900;
+  border: 0;
+  border-radius: .5em;
+  padding: 1.2em 1.3em;
+  margin-top: -1em;
+}
+
+#jumbo {
+  font-size: 2rem;
+  color: #fff;
+  margin: 3em auto 1.5em;
+  text-align: center;
+}
+
+#jumbo span {
+  color: rgb(123, 181, 21);
+}
+
+.sub_title {
+  width: 70%;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin: 2em auto;
+}
+
+#play {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin: 5em auto .5em;;
+}
+
+#play::before {
+  content: ' ';
+  position: absolute;
+  top: 19px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid rgb(123, 181, 21);
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid rgb(123, 181, 21);
+  transform: rotate(45deg);
+  background-image: -webkit-linear-gradient(bottom left, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%),
+                    -webkit-linear-gradient(bottom left, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%);
+  background-image: -o-linear-gradient(bottom left, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%),
+                    -o-linear-gradient(bottom left, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%);
+  background-image: linear-gradient(to top right, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%),
+                    linear-gradient(to top right, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%);
+  background-position: 1px 1px, -1px -1px;
+  background-repeat: no-repeat;
+}
+
+p.sub_title.italic {
+  padding-bottom: 7em;
+}
