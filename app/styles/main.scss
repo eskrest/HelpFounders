@@ -1,4 +1,4 @@
-// Global styles
+/* Global styles */
 
 * {
   margin: 0;
@@ -7,50 +7,10 @@
 
 body {
   font-family: "Maven Pro", Helvetica, sans-serif;
-  font-size: 1.375em;
+  font-size: 1rem;
 }
 
-.wrapper {
-  width: 80%;
-  margin: 0 auto;
-}
-
-// logo style
-
-.logo {
-  font-weight: 900;
-  color: #eee;
-  position: relative;
-  padding-left: 3em;
-}
-
-.logo::before {
-  content: ' ';
-  position: absolute;
-  top: -.3em;
-  left: 0px;
-  background-color: rgb(123, 181, 21);
-  width: 40px;
-  height: 40px;
-  border-radius: .5em;
-  transform: rotate(45deg);
-}
-
-.logo::after {
-  content: ' ';
-  position: absolute;
-  top: -.125em;
-  left: .9em;
-  background-color: #fff;
-  width: 30px;
-  height: 30px;
-  border-radius: .3em;
-  transform: rotate(45deg);
-}
-
-// end logo
-
-// clearfix
+/* clearfix */
 
 .clearfix::before,
 .clearfix::after {
@@ -62,75 +22,104 @@ body {
   clear: both;
 }
 
-// end clearfix
-
-.green {
-  background-color: rgb(123, 181, 21);
-  color: #fff;
-}
-
-.italic {
-  font-style: italic;
-}
+/* end clearfix */
 
 /* Banner styles */
 
-#banner {
+.banner {
   background-image: url(../images/header-bg.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  padding-bottom: 3em;
 }
 
-header {
-  padding: 2em 0;
+.banner__wrapper {
+  width: 100%;
+  margin: 0 auto;
 }
 
-header .logo {
-  float: left;
+/* logo */
+
+.banner__logo {
+  font-size: 1.25em;
+  font-weight: 900;
+  color: #eee;
+  margin: 1em 1em 1em 4.5em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
 }
 
-header nav {
-  float: right;
+.banner__logoimg {
+  position: absolute;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: 0 .2em;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  margin-left: -3.5em;
 }
 
-nav a {
-  padding-right: 4em;
+/* end logo */
+
+/* navigation */
+
+.banner__nav {
+  list-style: none;
+}
+
+.banner__navlink {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
+  display: inline-block;
+  text-align: center;
+  padding: .5em;
+  width: 45%;
 }
 
-header button {
-  float: right;
-  font-size: 1rem;
-  font-weight: 900;
+.banner__navlink:hover {
+  text-shadow: 0 0 5px #aaa;
+}
+
+.banner__call {
+  background-color: rgb(123, 181, 21);
   border: 0;
   border-radius: .5em;
-  padding: 1.2em 1.3em;
-  margin-top: -1em;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 900;
+  margin: 1em 25%;
+  padding: .5em .8em;
 }
 
-#jumbo {
+.banner__jumbo {
   font-size: 2rem;
   color: #fff;
-  margin: 3em auto 1.5em;
+  margin: 1em auto 0.5em;
   text-align: center;
 }
 
-#jumbo span {
+.banner__jumbo--green {
   color: rgb(123, 181, 21);
 }
 
-.sub_title {
-  width: 70%;
+.banner__subtitle {
+  width: 80%;
   font-size: 1rem;
   color: white;
-  text-align: center;
-  margin: 2em auto;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  padding: 2em 0;
+  margin: auto;
 }
 
-#play {
+.banner__playbutton {
   display: block;
   position: relative;
   width: 70px;
@@ -138,10 +127,10 @@ header button {
   border-radius: 50%;
   background-color: transparent;
   border: 2px solid #fff;
-  margin: 5em auto .5em;;
+  margin: 2em auto .5em;
 }
 
-#play::before {
+.banner__playbutton::before {
   content: ' ';
   position: absolute;
   top: 19px;
@@ -155,18 +144,21 @@ header button {
   transform: rotate(45deg);
   background-image: -webkit-linear-gradient(bottom left, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%),
                     -webkit-linear-gradient(bottom left, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%);
+
   background-image: -o-linear-gradient(bottom left, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%),
                     -o-linear-gradient(bottom left, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%);
+
   background-image: linear-gradient(to top right, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%),
                     linear-gradient(to top right, transparent 49%, rgb(123, 181, 21) 0%, rgb(123, 181, 21) 55%, transparent 0%);
+
   background-position: 1px 1px, -1px -1px;
   background-repeat: no-repeat;
 }
 
-#play:hover {
+.banner__playbutton:hover {
   cursor: pointer;
 }
 
-p.sub_title.italic {
-  padding-bottom: 7em;
+.banner__subtitle--italic {
+  font-style: italic;
 }
