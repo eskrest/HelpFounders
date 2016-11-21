@@ -110,7 +110,7 @@ body {
   width: 80%;
   font-size: 1rem;
   color: white;
-  text-align: justify;
+  text-align: center;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -161,4 +161,90 @@ body {
 
 .banner__subtitle--italic {
   font-style: italic;
+}
+
+/* Packages section */
+
+.packages {
+  background-color: rgb(116, 183, 47);
+  padding-top: 2em;
+}
+
+.packages__title {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 80%;
+}
+
+.packages__subtitle {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 2em;
+}
+
+.packages__wrapper {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.packages__item {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  padding: 10%;
+}
+
+.packages__packageimg {
+  margin: 0 auto 2em auto;
+  text-align: center;
+}
+
+.packages__subheader {
+  text-transform: uppercase;
+  color: rgb(129, 127, 127);
+  text-align: center;
+}
+
+.packages__header {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 3em;
+  margin: .5em auto;
+}
+
+.packages__description {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.packages__price {
+  text-transform: uppercase;
+  color: rgb(116, 183, 47);
+  text-align: center;
+  font-size: 3em;
+  margin: .5em auto;
+}
+
+.packages__buy-button {
+  font-size: 2em;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(113, 195, 62);
+  padding: .5em .8em;
+  border-radius: .3em;
 }
