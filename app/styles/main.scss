@@ -250,3 +250,85 @@ body {
   padding: .5em .8em;
   border-radius: .3em;
 }
+
+.advantages {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 4em 0;
+}
+
+.advantages__title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 80%;
+}
+
+.advantages__subtitle {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 2em;
+}
+
+.advantages__wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.advantages__item {
+  margin: 1em auto;
+}
+
+.advantages__item-ico {
+  text-align: center;
+}
+
+.advantages__item-title {
+  text-transform: uppercase;
+  color: rgb(112, 199, 66);
+  margin: 1em auto;
+}
+
+.advantages__item-description {
+  font-size: 1rem;
+  color: rgb(121, 121, 121);
+  text-align: center;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 2em;
+}
+
+.advantages__button {
+  display: block;
+  text-decoration: none;
+  max-width: 45%;
+  margin: 1em auto;
+  text-align: center;
+  padding: 1em 1.2em;
+  color: rgb(136, 205, 89);
+  border: 2px solid rgb(136, 205, 89);
+  border-radius: .5em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.advantages__button--green {
+  background-color: rgb(136, 205, 89);
+  color: rgb(255, 255, 255);
+  text-transform: none;
+  font-weight: 400;
+}
