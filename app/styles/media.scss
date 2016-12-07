@@ -35,6 +35,10 @@
     padding: 1em;
   }
 
+  .clients__subtitle {
+    text-align: center;
+  }
+
   .clients__list li {
     width: 49%;
     display: inline-block;
@@ -71,8 +75,8 @@
   .packages__item {
     display: inline-block;
     box-sizing: border-box;
-    width: 32.9%;
-    margin: 0;
+    width: 32%;
+    margin: 0 .1em;
     padding: 3%;
   }
 
