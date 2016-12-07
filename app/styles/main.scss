@@ -1,10 +1,5 @@
 /* Global styles */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Maven Pro", Helvetica, sans-serif;
   font-size: 1rem;
@@ -45,21 +40,11 @@ body {
   font-size: 1.25em;
   font-weight: 900;
   color: #eee;
-  margin: 1em 1em 1em 4.5em;
+  margin: 1em auto;
   text-align: center;
-  line-height: 3em;
-  position: relative;
-}
-
-.banner__logoimg {
-  position: absolute;
-  background-image: url(../images/logo.png);
-  background-repeat: no-repeat;
-  background-position: 0 .2em;
-  overflow: visible;
-  width: 100%;
-  height: 100%;
-  margin-left: -3.5em;
+  & img {
+    transform: translateY(15px);
+  }
 }
 
 /* end logo */
@@ -68,6 +53,7 @@ body {
 
 .banner__nav {
   list-style: none;
+  font-size: 0;
 }
 
 .banner__navlink {
@@ -75,9 +61,10 @@ body {
   text-decoration: none;
   font-size: 1rem;
   display: inline-block;
+  box-sizing: border-box;
   text-align: center;
   padding: .5em;
-  width: 45%;
+  width: 50%;
 }
 
 .banner__navlink:hover {
@@ -352,6 +339,7 @@ body {
   &__table {
     border-collapse: collapse;
     width: 100%;
+    font-size: .5em;
     & td, & th {
       border: 1px solid rgb(75, 109, 36);
       width: 25%;
@@ -365,7 +353,6 @@ body {
       font-weight: 400;
       &:first-child {
         background-color: rgb(116, 183, 47);
-        font-size: .5em;
         text-transform: capitalize;
       }
     }
@@ -419,12 +406,16 @@ body {
   padding: 2em;
   &__links {
     list-style: none;
+    font-size: 0;
+    padding: 0;
     & li {
       display: inline-block;
-      width: 45%;
+      box-sizing: border-box;
+      width: 50%;
       text-align: center;
-      padding: .5em;
       & a {
+        font-size: 1rem;
+        line-height: 1.5;
         text-decoration: none;
         color: inherit;
       }
