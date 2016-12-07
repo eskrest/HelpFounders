@@ -1,3 +1,128 @@
 @media (min-width: 768px) {
-  
+  .banner__logo {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .banner__nav {
+    width: 60%;
+    float: left;
+  }
+  .banner__navlink {
+    width: 25%;
+  }
+
+  .banner__call {
+    font-size: 1rem;
+    padding: .6em .8em;
+    width: 35%;
+  }
+
+  .banner__jumbo {
+    width: 75%;
+  }
+
+  .advantages__item {
+    width: 49%;
+    display: inline-block;
+  }
+
+  .advantages__button {
+    width: 42%;
+    display: inline-block;
+  }
+
+  .overview__table--buttons a {
+    padding: 1em;
+  }
+
+  .clients__list li {
+    width: 49%;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  .footer__links li {
+    width: 12%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner__logo {
+    width: 20%;
+    display: inline-block;
+    margin: 2em auto 2em 2em;
+  }
+
+  .banner__nav {
+    width: 45%;
+    display: inline-block;
+    float: none;
+  }
+
+  .banner__call {
+    display: inline-block;
+    width: 25%;
+  }
+
+  .packages__wrapper {
+    width: 90%;
+  }
+
+  .packages__item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 32.9%;
+    margin: 0;
+    padding: 3%;
+  }
+
+  .advantages__item {
+    width: 30%;
+    font-size: .8em;
+  }
+
+  .advantages__button {
+    width: 25%;
+    margin-left: 10%;
+  }
+
+  .overview {
+    & td {
+      font-size: 1rem;
+    }
+    & th {
+      font-size: 1rem;
+    }
+  }
+
+  .clients__list li {
+    width: 32%;
+  }
+
+  .footer .banner__logo {
+    float: none;
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+
+@media (min-width: 1366px) {
+  .banner__call {
+    display: inline-block;
+    width: 15%;
+  }
+
+  .banner__jumbo {
+    margin: 3em auto;
+  }
+
+  .banner__subtitle {
+    width: 50%;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  .banner__nav {
+    width: 55%;
+  }
 }
