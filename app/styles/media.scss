@@ -31,6 +31,10 @@
     display: inline-block;
   }
 
+  .overview__subtitle {
+    text-align: center;
+  }
+
   .overview__table--buttons a {
     padding: 1em;
   }
@@ -111,6 +115,10 @@
 }
 
 @media (min-width: 1366px) {
+  body {
+    font-size: 150%;
+  }
+
   .banner__call {
     display: inline-block;
     width: 15%;
@@ -128,5 +136,14 @@
 
   .banner__nav {
     width: 55%;
+  }
+
+  .overview__subtitle {
+    margin: 2em auto;
+  }
+
+  .overview__table {
+    width: 70%;
+    margin: 2em auto;
   }
 }
